@@ -1,0 +1,6 @@
+interface:
+  display_name: "Canvas2Note"
+  short_description: "同步 Canvas 新课件到 OneDrive，生成带原图的 Notion 笔记"
+  default_prompt: "使用 $canvas2note 同步本学期全部课程的新资料到 OneDrive，为新 lec 生成带课件原图的 Notion 详细笔记，并清理本次下载临时文件。"
+policy:
+  allow_implicit_invocation: true
