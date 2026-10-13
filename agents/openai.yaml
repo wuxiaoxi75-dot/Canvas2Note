@@ -1,6 +1,6 @@
 interface:
   display_name: "Canvas2Note"
-  short_description: "同步 Canvas 课件到 OneDrive，创建或深化带原图、不标考点的分层 Notion 笔记"
-  default_prompt: "使用 $canvas2note 同步本学期课件和笔记，结合可用已归档试卷生成带原图、分层解释和推理练习的详细笔记，不标考点或出题记录，并清理本次临时下载。"
+  short_description: "同步 Canvas 课件，生成能替代课件、从零学习且代码配效果图的 Notion 笔记"
+  default_prompt: "使用 $canvas2note 同步本学期课件和笔记；笔记必须能替代课件、支持从零学习，先解释概念再使用，逐页核对内容，所有代码配真实且无额外标题说明的效果图；结合可用已归档试卷编排深度但不透露考点，并清理本次临时下载。"
 policy:
   allow_implicit_invocation: true
