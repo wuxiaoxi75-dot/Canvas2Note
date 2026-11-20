@@ -1,12 +1,12 @@
 # Canvas2Note
 
-一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive。新 lecture 只向 Poe NoteTakerShenxu 发送课件 PDF 附件，不附提示词，再由 agent 核对、配图与补高亮，发布为 Notation 详细笔记。
+一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive。新 lecture 只向 Poe NoteTakerShenxu 发送课件 PDF 附件，不附提示词，由 agent 保留 Bot 原文并单独配图，发布到 Notation。
 
 ## 工作流
 
 1. 发现本学期所有选课的可访问教学附件，核查遗漏。
 2. 比较来源、版本与内容哈希，将新增资料按课程及 lec、lab、tut 等分类归档。
-3. 按 [Poe 草稿流程](references/poe-drafting.md) 为尚未建页的 lecture 起草；逐页复核后补齐解释、高亮、原课件示意图与真实代码效果图，按 [Notation 发布与排版](references/notation-publishing.md) 落版。
+3. 按 [Poe 草稿流程](references/poe-drafting.md) 为尚未建页的 lecture 生成笔记；保留 Bot 原文，将课件图和已核验的代码效果图单独配入，按 [Notation 发布与排版](references/notation-publishing.md) 落版。
    可参考已归档 final past papers 调整讲解深度和行内强调，不标注考点或出题记录；用户要求时也可复审深化旧笔记，保留个人稿件与批注。详见 [笔记质量与复审](references/note-quality.md)。
 4. 验证归档和笔记，保存续跑状态，仅清理本次产生的临时文件。
 
