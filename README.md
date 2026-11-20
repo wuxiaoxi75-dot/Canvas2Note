@@ -1,6 +1,6 @@
 # Canvas2Note
 
-一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive。新 lecture 的课件 PDF 交给 Poe NoteTakerShenxu 起草，再由 agent 核对、配图与补高亮，发布为 Notation 详细笔记。
+一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive。新 lecture 只向 Poe NoteTakerShenxu 发送课件 PDF 附件，不附提示词，再由 agent 核对、配图与补高亮，发布为 Notation 详细笔记。
 
 ## 工作流
 
