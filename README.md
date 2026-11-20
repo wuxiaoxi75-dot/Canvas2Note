@@ -1,16 +1,16 @@
 # Canvas2Note
 
-一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive，并为新 lecture 生成带课件原图的 Notation 详细笔记。
+一个面向 Codex 的中文 skill，将 Canvas 课程资料增量归档到 OneDrive。新 lecture 的课件 PDF 交给 Poe NoteTakerShenxu 起草，再由 agent 核对、配图与补高亮，发布为 Notation 详细笔记。
 
 ## 工作流
 
 1. 发现本学期所有选课的可访问教学附件，核查遗漏。
 2. 比较来源、版本与内容哈希，将新增资料按课程及 lec、lab、tut 等分类归档。
-3. 为新增或待完成 lecture 创建或补全分层 Notation 笔记，展开原理、推导、示例、概念辨析与自检，用 Notation 原生图层在对应知识点排布原课件示意图、并排对照与代码效果图。详见 [Notation 发布与排版](references/notation-publishing.md)。
-   可参考已归档 final past papers 调整讲解深度，但不在笔记中标出考点或出题记录；用户要求时也可复审深化旧笔记，保留个人稿件与批注。详见 [笔记质量与复审](references/note-quality.md)。
+3. 按 [Poe 草稿流程](references/poe-drafting.md) 为尚未建页的 lecture 起草；逐页复核后补齐解释、高亮、原课件示意图与真实代码效果图，按 [Notation 发布与排版](references/notation-publishing.md) 落版。
+   可参考已归档 final past papers 调整讲解深度和行内强调，不标注考点或出题记录；用户要求时也可复审深化旧笔记，保留个人稿件与批注。详见 [笔记质量与复审](references/note-quality.md)。
 4. 验证归档和笔记，保存续跑状态，仅清理本次产生的临时文件。
 
-这是供 agent 执行的工作流说明，不是独立爬虫或后台服务。需要可用的 Canvas 会话或连接器、已连接的 Notation Codex 插件及本地 OneDrive 目录；执行时仍需遵守登录、授权和工具能力限制。
+这是供 agent 执行的工作流说明，不是独立爬虫或后台服务。需要可用的 Canvas 会话或连接器、已连接的 Notation Codex 插件及本地 OneDrive 目录。新讲次还需要可向指定 Poe Bot 发送课件 PDF 的途径；选择 API 时，运行环境缺少 `POE_API_KEY` 就通过安全渠道向用户请求配置。
 
 ## 使用前配置
 
